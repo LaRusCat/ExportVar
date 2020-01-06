@@ -1,0 +1,58 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[ {
+"base": "Stat",
+"class": "AttackStat",
+"language": "GDScript",
+"path": "res://AttackStat.gd"
+}, {
+"base": "Resource",
+"class": "AttackStats",
+"language": "GDScript",
+"path": "res://AttackStats.gd"
+}, {
+"base": "Resource",
+"class": "CharacterStats",
+"language": "GDScript",
+"path": "res://CharacterStats.gd"
+}, {
+"base": "Stat",
+"class": "DefenceStat",
+"language": "GDScript",
+"path": "res://DefenceStat.gd"
+}, {
+"base": "Resource",
+"class": "DefenceStats",
+"language": "GDScript",
+"path": "res://DefenceStats.gd"
+}, {
+"base": "Resource",
+"class": "Stat",
+"language": "GDScript",
+"path": "res://Stat.gd"
+} ]
+_global_script_class_icons={
+"AttackStat": "",
+"AttackStats": "",
+"CharacterStats": "",
+"DefenceStat": "",
+"DefenceStats": "",
+"Stat": ""
+}
+
+[application]
+
+config/name="ExportVar"
+config/icon="res://icon.png"
+
+[rendering]
+
+environment/default_environment="res://default_env.tres"

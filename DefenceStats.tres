@@ -1,0 +1,26 @@
+[gd_resource type="Resource" load_steps=3 format=2]
+
+[ext_resource path="res://DefenceStat.tres" type="Resource" id=1]
+
+[sub_resource type="GDScript" id=2]
+script/source = "extends Resource
+
+class_name DefenceStats
+
+export var health_defence : Resource = preload(\"res://DefenceStat.tres\")
+export var physical_defence : Resource = preload(\"res://DefenceStat.tres\")
+export var fire_defence : Resource = preload(\"res://DefenceStat.tres\")
+export var bleed_defence : Resource = preload(\"res://DefenceStat.tres\")
+export var poison_defence : Resource = preload(\"res://DefenceStat.tres\")
+export var stun_defence : Resource = preload(\"res://DefenceStat.tres\")
+"
+
+[resource]
+resource_local_to_scene = true
+script = SubResource( 2 )
+health_defence = ExtResource( 1 )
+physical_defence = ExtResource( 1 )
+fire_defence = ExtResource( 1 )
+bleed_defence = ExtResource( 1 )
+poison_defence = ExtResource( 1 )
+stun_defence = ExtResource( 1 )

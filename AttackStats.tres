@@ -1,0 +1,14 @@
+[gd_resource type="Resource" load_steps=3 format=2]
+
+[ext_resource path="res://AttackStat.tres" type="Resource" id=1]
+[ext_resource path="res://AttackStats.gd" type="Script" id=2]
+
+[resource]
+resource_local_to_scene = true
+script = ExtResource( 2 )
+health_attack = ExtResource( 1 )
+physical_attack = ExtResource( 1 )
+fire_attack = ExtResource( 1 )
+bleed_attack = ExtResource( 1 )
+poison_attack = ExtResource( 1 )
+stun_attack = ExtResource( 1 )
