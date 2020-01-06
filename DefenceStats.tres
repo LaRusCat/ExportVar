@@ -2,7 +2,7 @@
 
 [ext_resource path="res://DefenceStat.tres" type="Resource" id=1]
 
-[sub_resource type="GDScript" id=2]
+[sub_resource type="GDScript" id=1]
 script/source = "extends Resource
 
 class_name DefenceStats
@@ -17,7 +17,7 @@ export var stun_defence : Resource = preload(\"res://DefenceStat.tres\")
 
 [resource]
 resource_local_to_scene = true
-script = SubResource( 2 )
+script = SubResource( 1 )
 health_defence = ExtResource( 1 )
 physical_defence = ExtResource( 1 )
 fire_defence = ExtResource( 1 )
